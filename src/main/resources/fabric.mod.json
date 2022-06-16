@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "graverobber",
+  "version": "${version}",
+  "name": "Grave Robber",
+  "description": "Teleport to Graves!",
+  "authors": [
+    "QPCrummer"
+  ],
+  "license": "GPL-3.0",
+  "icon": "assets/graverobber/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.github.CrumCreators.grave_robber.Main"
+    ]
+  },
+  "mixins": [
+    "grave_robber.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "fabric": "*",
+    "java": ">=17",
+    "universal-graves": "*"
+  }
+}

@@ -1,2 +1,3 @@
-# GraveRobber
-A small fabric mod for teleporting to Universal Graves
+# Grave Robber
+## Teleport to Graves
+
