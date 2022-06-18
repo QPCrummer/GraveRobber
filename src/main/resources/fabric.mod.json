@@ -22,6 +22,7 @@
     "fabricloader": "*",
     "fabric": "*",
     "java": ">=17",
-    "universal-graves": "*"
+    "universal-graves": "*",
+    "minecraft": "*"
   }
 }

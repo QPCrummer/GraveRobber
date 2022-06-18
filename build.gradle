@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.11-SNAPSHOT'
+    id 'fabric-loom' version '0.12-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -14,11 +14,11 @@ repositories {
     maven { url 'https://maven.nucleoid.xyz' }
     maven { url 'https://api.modrinth.com/maven'}
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    mavenCentral()
 }
 
 dependencies {
-    implementation 'org.jetbrains:annotations:20.1.0'
-    implementation 'org.jetbrains:annotations:20.1.0'
+    implementation 'org.jetbrains:annotations:23.0.0'
 
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -27,13 +27,13 @@ dependencies {
 
     // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation("maven.modrinth:universal-graves:2.0.3+1.18.2")
-    modImplementation("eu.pb4:sgui:1.0.2+1.18.2")
-    modImplementation("eu.pb4:placeholder-api:1.1.3+1.17.1")
-    modImplementation("eu.pb4:polymer:0.2.0-rc.2+1.18.2")
-    modImplementation("eu.pb4:hologram-api:0.2.1+1.18-pre5")
+    modImplementation("maven.modrinth:universal-graves:2.0.5+1.19")
+    modImplementation("eu.pb4:sgui:1.1.0+1.19")
+    modImplementation("eu.pb4:placeholder-api:2.0.0-beta.5+1.19")
+    modImplementation("eu.pb4:polymer:0.2.1+1.19")
+    modImplementation("eu.pb4:hologram-api:0.2.2+1.19")
     modImplementation("me.lucko:fabric-permissions-api:0.1-SNAPSHOT")
-    modImplementation include("fr.catcore:server-translations-api:1.4.12+1.18.2")
+    modImplementation("fr.catcore:server-translations-api:1.4.14+1.19-rc2")
 }
 
 processResources {
